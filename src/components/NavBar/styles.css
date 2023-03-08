@@ -1,0 +1,42 @@
+.navbar > .container{
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: space-between;
+
+}
+
+
+.navbar {
+border-top: 5px solid black;
+border-bottom: 5px solid black;
+}
+
+.navbar_img {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+
+li {
+  font-size: 1.1rem;
+  list-style-type: none;
+  font-weight: 400;
+  
+ }
+ 
+ .navbar_menu {
+   padding: 0.5rem;
+   color: black;
+   list-style-type: none;
+   text-decoration: none;
+ }
+ 
+ 
+ .navbar_menu:hover {
+   
+   color: aqua;
+ 
+ }
+ 
+

@@ -1,0 +1,18 @@
+.card {
+    border: solid;
+    border-color: black;
+    border-width: 8px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+        
+
+  }
+
+.itemdetail_img {
+  max-height: 400px;
+  max-width: 400px;
+}
