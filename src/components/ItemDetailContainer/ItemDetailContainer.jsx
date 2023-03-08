@@ -22,7 +22,7 @@ useEffect (()=>{
     promesaItem.then((respuesta)=>setItem(respuesta));
 
 
-}, [])
+}, [idProduct])
 
   return (
     <div className="container">

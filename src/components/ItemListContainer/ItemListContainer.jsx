@@ -22,16 +22,18 @@ const ItemListContainer = ()=>{
   const params = useParams ();
   const idCategory = params.idCategory;
 
-  async function leerDatos() {
-    if (idCategory === undefined) {
-      let respuesta = await listadoProductos; setProductos(respuesta);
-  } else {
-      let respuesta = await getItemsByCategoryFromDatabase(idCategory); setProductos(respuesta);
-  }
-}
-
-  useEffect(()=>{
-    leerDatos()
+  useEffect(() => {
+    async function leerDatos() {
+      if (idCategory === undefined) {
+        let respuesta = await listadoProductos; 
+        setProductos(respuesta);
+      } else {
+        let respuesta = await getItemsByCategoryFromDatabase(idCategory); 
+        setProductos(respuesta);
+      }
+    }
+    
+    leerDatos();
   }, [idCategory])
 
   return (
